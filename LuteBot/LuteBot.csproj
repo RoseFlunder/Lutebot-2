@@ -39,8 +39,21 @@
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Sanford.Multimedia">
-      <HintPath>..\..\CSharpMidiToolkitV5_demo\Sanford.Multimedia.dll</HintPath>
+    <Reference Include="Sanford.Collections">
+      <HintPath>lib\Sanford.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Sanford.Multimedia, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Sanford.Multimedia.dll</HintPath>
+    </Reference>
+    <Reference Include="Sanford.Multimedia.Midi">
+      <HintPath>lib\Sanford.Multimedia.Midi.dll</HintPath>
+    </Reference>
+    <Reference Include="Sanford.Multimedia.Timers">
+      <HintPath>lib\Sanford.Multimedia.Timers.dll</HintPath>
+    </Reference>
+    <Reference Include="Sanford.Threading">
+      <HintPath>lib\Sanford.Threading.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -195,12 +208,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\Old\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Libraries\Sanford.Multimedia.Midi-master\Source\Sanford.Multimedia.Midi.csproj">
-      <Project>{4269c72a-8d3a-4737-8f89-72eaa33ea9e1}</Project>
-      <Name>Sanford.Multimedia.Midi</Name>
-    </ProjectReference>
+    <Folder Include="lib\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
